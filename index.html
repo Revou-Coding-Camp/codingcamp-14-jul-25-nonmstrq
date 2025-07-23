@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>hdhd</title>
+  <title>Laundry Shop</title>
   
   <!-- HTML -->
   
@@ -26,10 +26,10 @@
     
     <!-- Navigation -->
     <nav class="flex-none mx-6">
-      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[8px] text-decoration-none" href="#home-page">Home</a>
-      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[8px] text-decoration-none" href="#our-profile">Our Profile</a>
-      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[8px] text-decoration-none" href="#outlet">Outlet</a>
-      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[8px] text-decoration-none" href="#contact-us">Contact Us</a>
+      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[4px] text-decoration-none" href="#home-page">Home</a>
+      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[4px] text-decoration-none" href="#our-profile">Our Profile</a>
+      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[4px] text-decoration-none" href="#outlet">Outlet</a>
+      <a style="font-family: 'Righteous', cursive;" class="text-sm py-[4px] px-[4px] text-decoration-none" href="#contact-us">Contact Us</a>
     </nav>
     
   </header>
@@ -46,7 +46,7 @@
           <h1 style="font-family: 'Righteous', cursive;" class="text-4xl text-center text-white my-2">Selamat Datang <span id="welcome-user">[User]</span>, di Laundry Shop
           </h1>
           <p style="font-family: 'Alata', sans-serif;" class="text-center text-white p-[10px]">Layanan Laundry Terbaik, Unit Premium, Garansi Tepat Waktu, dan Penjemputan & Pengantaran Gratis</p>
-          <a style="font-family: 'Righteous', cursive;" class="border rounded py-[3px] px-[10px] bg-blue-500 text-center text-white mt-4" href="#contact-us">Contact Us</a>
+          <a style="font-family: 'Righteous', cursive;" class="border rounded py-[8px] px-[20px] bg-blue-500 text-center text-white mt-4" href="#contact-us">Contact Us</a>
         </div>
       </header>
     </section>
@@ -117,7 +117,7 @@
     </section>
     
     <!-- Contact Us Content -->
-    <section>
+    <section id="contact-us">
       <header class="flex flex-col justify-center items-center bg-blue-500 p-[10px] h-full">
         <div class="flex flex-col justify-center items-center h-full">
           <h2 style="font-family: 'Righteous', cursive;" class="text-3xl text-center text-white my-4">Contact Us
@@ -128,15 +128,15 @@
         <img src="profil.png" alt="" class="mt-4 mx-auto">
       </div>
       <form>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-justify mx-6">
           <label for="name-input" class="mb-2">Name:</label>
-          <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-1/2">
+          <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-auto">
           
           <label for="dob-input" class="mb-2">Date of Birth:</label>
-          <input type="date" id="dob-input" name="dob" class="border rounded p-2 mb-4 w-1/2">
+          <input type="date" id="dob-input" name="dob" class="border rounded p-2 mb-4 w-auto">
           
           <label for="gender-input" class="mb-2">Gender:</label>
-          <select id="gender-input" name="gender" class="border rounded p-2 mb-4 w-1/2">
+          <select id="gender-input" name="gender" class="border rounded p-2 mb-4 w-auto">
             <option value="">-- Select Gender --</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -144,13 +144,13 @@
           </select>
           
           <label for="message-input" class="mb-2">Message:</label>
-          <textarea id="message-input" name="message" rows="4" class="border rounded p-2 mb-4 w-1/2"></textarea>
+          <textarea id="message-input" name="message" rows="4" class="border rounded p-2 mb-4 w-auto"></textarea>
           
-          <button onclick="validateForm();" type="button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
+          <button onclick="validateForm();" type="button" class="center mx-20 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
         </div>
       </form>
 
-       <div id="message-output" class="text-center mt-4">Result:</div>
+       <div id="message-output" class="text-center mt-4 border mt-6 mb-6 mx-6 rounded text-justify"></div>
     </section>
   </main>
   
